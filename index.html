@@ -3,108 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>唐山三百首</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-    }
-    header a:hover {
-      text-decoration: underline;
-    }
-    .banner {
-      background-image: url('banner.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    }
-    .banner h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    .content {
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .poem {
-      border: 1px solid #ddd;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      background: white;
-    }
-    .poem h2 {
-      margin: 0;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-    }
-  </style>
+  <title>唐诗三百首 - 古韵流芳</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!-- 顶部导航 -->
 <header>
-  <div>唐山三百首</div>
+  <div class="logo">唐诗三百首</div>
   <nav>
     <a href="#home">首页</a>
-    <a href="#poems">诗歌分类</a>
-    <a href="#culture">诗歌文化</a>
+    <a href="#categories">分类</a>
+    <a href="#authors">作者简介</a>
+    <a href="#analysis">经典赏析</a>
     <a href="#about">关于我们</a>
-    <a href="#contact">联系我们</a>
   </nav>
 </header>
 
+<!-- 头部大图 -->
 <div class="banner">
-  <h1>唐山三百首</h1>
-  <p>传承古韵，品味诗意唐山</p>
-</div>
-
-<div class="content">
-  <h2>精选诗歌</h2>
-  <div class="poem">
-    <h2>《诗歌标题1》</h2>
-    <p>诗歌内容……</p>
-    <p><em>作者：XXX</em></p>
-  </div>
-  <div class="poem">
-    <h2>《诗歌标题2》</h2>
-    <p>诗歌内容……</p>
-    <p><em>作者：XXX</em></p>
-  </div>
-  <div class="poem">
-    <h2>《诗歌标题3》</h2>
-    <p>诗歌内容……</p>
-    <p><em>作者：XXX</em></p>
+  <div class="banner-content">
+    <h1>唐诗三百首</h1>
+    <p>诗之盛，莫过于唐。百代文宗，千古流芳。</p>
+    <a href="#categories" class="btn">开始阅读</a>
   </div>
 </div>
 
+<!-- 精选推荐 -->
+<section id="recommended" class="content">
+  <h2>精选唐诗</h2>
+  <div class="poem-grid">
+    <div class="poem">
+      <h3>《静夜思》</h3>
+      <p>床前明月光，疑是地上霜。<br>举头望明月，低头思故乡。</p>
+      <p><em>作者：李白</em></p>
+    </div>
+    <div class="poem">
+      <h3>《春晓》</h3>
+      <p>春眠不觉晓，处处闻啼鸟。<br>夜来风雨声，花落知多少。</p>
+      <p><em>作者：孟浩然</em></p>
+    </div>
+    <div class="poem">
+      <h3>《登鹳雀楼》</h3>
+      <p>白日依山尽，黄河入海流。<br>欲穷千里目，更上一层楼。</p>
+      <p><em>作者：王之涣</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- 分类展示 -->
+<section id="categories" class="content">
+  <h2>分类目录</h2>
+  <div class="category-grid">
+    <div class="category-item">
+      <h3>五言绝句</h3>
+      <p>短小精悍，语言凝练。</p>
+      <a href="categories/wuyan.html" class="btn">查看详情</a>
+    </div>
+    <div class="category-item">
+      <h3>七言绝句</h3>
+      <p>音律优美，脍炙人口。</p>
+      <a href="categories/qiyan.html" class="btn">查看详情</a>
+    </div>
+    <div class="category-item">
+      <h3>五言律诗</h3>
+      <p>对仗工整，意境深远。</p>
+      <a href="categories/wulv.html" class="btn">查看详情</a>
+    </div>
+  </div>
+</section>
+
+<!-- 关于我们 -->
+<section id="about" class="content">
+  <h2>关于唐诗三百首</h2>
+  <p>《唐诗三百首》是清代蘅塘退士编选的一部经典唐诗选集，收录了唐代各大名家的经典诗篇，是传承唐代文学和中国古代文化的重要桥梁。</p>
+</section>
+
+<!-- 联系方式 -->
 <footer>
-  &copy; 2024 唐山三百首 | 传承与创新
+  <div class="footer-content">
+    <p>联系我们: info@tangshi300.com</p>
+    <p>&copy; 2024 唐诗三百首 | 弘扬传统文化</p>
+  </div>
 </footer>
 </body>
 </html>
