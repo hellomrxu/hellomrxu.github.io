@@ -1,89 +1,237 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>唐诗三百首 - 古韵流芳</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b775e">
+<meta name="description" content="比亚迪大唐 2026-10-31 提车现场离线核验助手：清单、异常记录、费用、交车门禁、备份">
+<title>大唐提车随身助手 · 10月31日</title>
+<style>
+:root{--ink:#142a29;--muted:#6b7b78;--bg:#f3f6f4;--paper:#fff;--line:#dfe8e4;--brand:#0b8669;--brand-dark:#07624e;--light:#e8f6ef;--warn:#9b5b0c;--warn-bg:#fff5e5;--danger:#b63232;--danger-bg:#fff0ef;--radius:17px;--shadow:0 8px 28px rgba(10,58,45,.055)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);line-height:1.55;font-size:15px}button,input,textarea,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}a{color:var(--brand)}.app{max-width:1040px;margin:0 auto;padding:0 14px 108px}header{background:linear-gradient(130deg,#075b4c,#0b876d 66%,#1e9e80);color:#fff;margin:0 -14px;padding:calc(21px + env(safe-area-inset-top)) 20px 24px;border-radius:0 0 28px 28px}header .eyebrow{font-size:12px;opacity:.86;letter-spacing:.1em}h1{font-size:27px;line-height:1.22;letter-spacing:-.5px;margin:8px 0}header p{margin:8px 0 14px;color:#ddf8ec;font-size:13px}.hero-row{display:flex;gap:12px;align-items:center;justify-content:space-between}.hero-metrics{display:flex;gap:10px;flex-wrap:wrap}.chip{background:rgba(255,255,255,.17);padding:6px 9px;border-radius:100px;font-size:12px}.round-progress{--progress:0%;flex:0 0 72px;width:72px;height:72px;border-radius:50%;background:conic-gradient(#c1f2dc var(--progress),rgba(255,255,255,.16) 0);display:grid;place-items:center}.round-progress span{width:56px;height:56px;display:grid;place-items:center;border-radius:50%;background:#0d7861;font-size:18px;font-weight:750}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:19px 0 9px}h2{font-size:19px;margin:0}h3{font-size:16px;margin:0}p{margin:8px 0}.small{color:var(--muted);font-size:12px}.tiny{font-size:11px}.bold{font-weight:750}.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-top:12px;overflow:hidden}.card-body{padding:16px}.soft{background:#f7faf9}.alert{padding:13px 15px;border-radius:13px;border:1px solid #d0ebdf;background:#edf8f2;font-size:13px}.alert.warn{background:var(--warn-bg);border-color:#f2d9ad;color:#6f460d}.alert.danger{background:var(--danger-bg);border-color:#f1c9c5;color:#942d2d}.alert strong{display:block;margin-bottom:3px}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid #c7d7d0;background:#fff;color:var(--ink);font-weight:680;border-radius:11px;min-height:41px;padding:8px 12px;text-align:center}.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}.btn.dark{background:#133b33;color:#fff;border-color:#133b33}.btn.warn{background:#fff9f0;border-color:#f0c58f;color:#885019}.btn.sm{font-size:12px;padding:5px 9px;min-height:32px}.btn.link{background:transparent;border:0;text-decoration:underline;font-weight:600}.btn:focus-visible,.task:focus-within{outline:3px solid #82d0b3;outline-offset:2px}.stage-bar{position:sticky;z-index:5;top:0;margin:0 -14px;background:rgba(243,246,244,.97);padding:10px 14px 7px;border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}.tabs{display:flex;gap:7px;overflow:auto;scrollbar-width:none;padding-bottom:4px}.tabs::-webkit-scrollbar{display:none}.tab{white-space:nowrap;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 12px;color:#52635f;font-size:13px;min-width:max-content}.tab.active{background:var(--brand-dark);color:#fff;border-color:var(--brand-dark);font-weight:700}.tab .count{font-size:11px;opacity:.8}.progress-bg{height:6px;background:#e5ece8;border-radius:10px;overflow:hidden;margin-top:8px}.progress-fg{height:100%;background:#32ae84;width:0;transition:width .2s}.stage-intro{padding:14px 15px}.stage-intro h2{font-size:21px}.stage-intro p{color:#60716d;font-size:13px}.step-number{font-size:11px;font-weight:750;letter-spacing:.08em;color:var(--brand)}.guide{font-size:13px;background:#f7faf8;border-top:1px solid var(--line);padding:12px 15px;color:#50615e}.group-head{padding:14px 15px 12px;display:flex;justify-content:space-between;gap:10px;align-items:center;border-bottom:1px solid #e9eeeb}.group-head span{color:var(--muted);font-size:12px}.task{padding:13px 15px;border-bottom:1px solid #eef2ef}.task:last-child{border-bottom:none}.task-top{display:flex;align-items:flex-start;gap:10px}.task-main{flex:1;min-width:0}.task-title{font-weight:620;font-size:14px;line-height:1.5}.task.done .task-title{color:#58736a}.task-state{border:1px solid #c8d7d0;border-radius:10px;background:#fff;min-width:50px;min-height:42px;font-size:12px;display:grid;place-items:center;flex:0 0 50px;font-weight:700}.task-state.is-done{background:var(--light);border-color:#b6e6d2;color:var(--brand-dark)}.task-state.is-na{background:#eff1f0;color:#687673}.task-detail{margin:4px 0 0;color:var(--muted);font-size:12px}.task-actions{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}.micro{font-size:11px;padding:4px 8px;border-radius:7px;background:#f4f8f6;border:1px solid #dce8e1;color:#526760;min-height:29px}.micro.mark{color:#995b14;background:#fff9ed;border-color:#f0dfc1}.micro.na{background:#f3f5f4}.task-note{width:100%;resize:vertical;margin-top:9px;min-height:60px;padding:9px;border-radius:9px;border:1px solid #d8e3dd;font-size:13px}.task-badge{font-size:10px;border-radius:5px;padding:2px 5px;margin-left:4px;background:#ffe8e4;color:#a53e33;vertical-align:middle}.metadata-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{display:flex;flex-direction:column;gap:5px}.field label{font-size:12px;font-weight:680;color:#40534f}.field input,.field select,.field textarea{width:100%;border:1px solid #cbdad3;border-radius:10px;background:#fff;color:var(--ink);padding:11px 10px;font-size:14px;min-height:43px}.field textarea{min-height:76px;resize:vertical}.field.wide{grid-column:1/-1}.caption{font-size:12px;color:var(--muted)}.kv{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13px}.kv:last-child{border-bottom:0}.kv strong{font-variant-numeric:tabular-nums}.gates{display:grid;gap:9px}.gate{display:flex;align-items:center;gap:11px;padding:12px;background:#f7faf8;border:1px solid #e0ebe5;border-radius:12px}.gate input{width:22px;height:22px;accent-color:var(--brand);flex-shrink:0}.gate label{font-size:13px;font-weight:650;flex:1}.gate small{display:block;font-weight:400;color:#64766f;margin-top:3px}.issue{border:1px solid #ecd9ca;background:#fffbf6;border-radius:13px;padding:12px;margin:9px 0}.issue.critical{background:#fff5f4;border-color:#edc3bf}.issue.resolved{background:#f5faf6;border-color:#cfe4d6}.pill{font-size:11px;padding:3px 7px;border-radius:99px;background:#f4e3cc;color:#88551a}.pill.red{background:#fde2df;color:#a93131}.pill.green{background:#d9f3e3;color:#0a765a}.issue-header{display:flex;justify-content:space-between;align-items:center;gap:8px}.issue p{font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere}.issue footer{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:9px}.issue small{font-size:11px;color:var(--muted)}.money-result{background:#eaf6ef;border-radius:13px;padding:15px}.money-result .number{font-weight:850;font-size:30px;color:#0b6651;line-height:1.25;letter-spacing:-.7px}.bottom-bar{position:fixed;bottom:0;left:0;right:0;z-index:20;background:rgba(255,255,255,.97);box-shadow:0 -4px 23px rgba(0,0,0,.10);padding:9px max(12px,env(safe-area-inset-left)) calc(9px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-right));display:flex;align-items:center;justify-content:center;gap:9px}.bottom-inner{max-width:1010px;width:100%;display:flex;gap:8px}.bottom-inner .btn{flex:1;min-height:47px}.bottom-inner .btn:nth-child(2){flex:1.3}.drawer-overlay{position:fixed;inset:0;background:#0b2b2470;z-index:29;display:none}.drawer-overlay.open{display:block}.drawer{position:fixed;inset:auto 0 0;max-height:88vh;overflow-y:auto;background:#fff;border-radius:24px 24px 0 0;box-shadow:0 -8px 40px #142c2a30;padding:20px 16px calc(20px + env(safe-area-inset-bottom));z-index:30;display:none}.drawer.open{display:block}.drawer-inner{max-width:740px;margin:0 auto}.drawer h2{margin:0 0 10px}.drawer-head{display:flex;align-items:center;justify-content:space-between}.tool-btns{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.footer-note{text-align:center;color:#82918a;font-size:11px;padding:18px 6px}.hidden{display:none!important}.divider{border:0;border-top:1px solid var(--line);margin:15px 0}.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%);background:#122f2a;color:#fff;border-radius:12px;padding:10px 16px;font-size:13px;box-shadow:0 9px 25px #0002;z-index:80;opacity:0;pointer-events:none;transition:opacity .2s;text-align:center;max-width:92%;min-width:160px}.toast.show{opacity:1}.status-badge{border-radius:100px;padding:4px 7px;background:#edf7f0;color:#14654f;font-size:11px}.status-badge.bad{background:#fff0e8;color:#9b4a20}.overview-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{padding:12px;background:#f7faf8;border-radius:12px;text-align:center}.stat strong{font-size:20px;display:block}.stat span{font-size:11px;color:var(--muted)}.report-view{display:none}.navhint{text-align:center;font-size:12px;color:var(--muted);margin:10px 0}.indent{padding-left:13px}.link{color:var(--brand-dark);text-decoration:underline}.print-only{display:none}
+@media(max-width:480px){header{padding-left:17px;padding-right:17px}h1{font-size:24px}.metadata-grid{grid-template-columns:1fr 1fr;gap:9px}.field.wide{grid-column:1/-1}.card-body{padding:14px}.task{padding:12px}.hero-metrics .chip{font-size:11px}.btn{font-size:13px}}
+@media(min-width:760px){.app{padding:0 20px 100px}header{margin:0 -20px;padding-left:32px;padding-right:32px}.stage-bar{margin:0 -20px;padding:10px 20px}.stage-layout{display:grid;grid-template-columns:1fr 340px;gap:16px}.stage-layout>aside{align-self:start;position:sticky;top:74px}.drawer{left:50%;right:auto;width:min(700px,100%);transform:translateX(-50%)}.metadata-grid{grid-template-columns:repeat(3,1fr)}}
+@media print{body{background:#fff;color:#000;font-size:11px}.app,.bottom-bar,.drawer,.drawer-overlay,.toast{display:none!important}.report-view{display:block!important;padding:12px}.report-view h1{font-size:23px}.report-view h2{font-size:16px;margin:14px 0 5px}.report-view p,.report-view li{line-height:1.4}.report-view table{width:100%;border-collapse:collapse}.report-view td,.report-view th{border:1px solid #999;padding:5px;vertical-align:top;word-break:break-word}.report-view .page-break{page-break-before:always}}
+</style>
 </head>
 <body>
-<!-- 顶部导航 -->
+<div class="app">
 <header>
-  <div class="logo">唐诗三百首</div>
-  <nav>
-    <a href="#home">首页</a>
-    <a href="#categories">分类</a>
-    <a href="#authors">作者简介</a>
-    <a href="#analysis">经典赏析</a>
-    <a href="#about">关于我们</a>
-  </nav>
+  <div class="eyebrow">OFFLINE · 提车现场随身工作台</div>
+  <div class="hero-row">
+    <div><h1>比亚迪大唐<br>提车全流程助手</h1><p>2026年10月31日 · 周六 · 10:30 到店</p></div>
+    <div class="round-progress" id="ring"><span id="ringText">0%</span></div>
+  </div>
+  <div class="hero-metrics"><span class="chip" id="heroChecks">已核验 0 / 0</span><span class="chip" id="heroBlockers">阻断异常 0</span><span class="chip" id="heroStorage">本机自动保存</span></div>
 </header>
-
-<!-- 头部大图 -->
-<div class="banner">
-  <div class="banner-content">
-    <h1>唐诗三百首</h1>
-    <p>诗之盛，莫过于唐。百代文宗，千古流芳。</p>
-    <a href="#categories" class="btn">开始阅读</a>
-  </div>
+<div class="stage-bar"><div class="tabs" id="stageTabs" role="tablist" aria-label="提车阶段"></div><div class="progress-bg"><div class="progress-fg" id="currentProgress"></div></div></div>
+<div id="topWarnings"></div>
+<div class="section-heading"><h2>现场操作</h2><button class="btn sm" id="openTools">☰ 记录与备份</button></div>
+<div id="stagePane"></div>
+<div class="footer-note">单文件离线可用 · 勾选自动记录于当前浏览器 · 建议每完成一阶段导出备份<br>本清单为辅助核验工具；具体以合同、车辆配置及官方办事要求为准。</div>
 </div>
-
-<!-- 精选推荐 -->
-<section id="recommended" class="content">
-  <h2>精选唐诗</h2>
-  <div class="poem-grid">
-    <div class="poem">
-      <h3>《静夜思》</h3>
-      <p>床前明月光，疑是地上霜。<br>举头望明月，低头思故乡。</p>
-      <p><em>作者：李白</em></p>
-    </div>
-    <div class="poem">
-      <h3>《春晓》</h3>
-      <p>春眠不觉晓，处处闻啼鸟。<br>夜来风雨声，花落知多少。</p>
-      <p><em>作者：孟浩然</em></p>
-    </div>
-    <div class="poem">
-      <h3>《登鹳雀楼》</h3>
-      <p>白日依山尽，黄河入海流。<br>欲穷千里目，更上一层楼。</p>
-      <p><em>作者：王之涣</em></p>
-    </div>
-  </div>
-</section>
-
-<!-- 分类展示 -->
-<section id="categories" class="content">
-  <h2>分类目录</h2>
-  <div class="category-grid">
-    <div class="category-item">
-      <h3>五言绝句</h3>
-      <p>短小精悍，语言凝练。</p>
-      <a href="categories/wuyan.html" class="btn">查看详情</a>
-    </div>
-    <div class="category-item">
-      <h3>七言绝句</h3>
-      <p>音律优美，脍炙人口。</p>
-      <a href="categories/qiyan.html" class="btn">查看详情</a>
-    </div>
-    <div class="category-item">
-      <h3>五言律诗</h3>
-      <p>对仗工整，意境深远。</p>
-      <a href="categories/wulv.html" class="btn">查看详情</a>
-    </div>
-  </div>
-</section>
-
-<!-- 关于我们 -->
-<section id="about" class="content">
-  <h2>关于唐诗三百首</h2>
-  <p>《唐诗三百首》是清代蘅塘退士编选的一部经典唐诗选集，收录了唐代各大名家的经典诗篇，是传承唐代文学和中国古代文化的重要桥梁。</p>
-</section>
-
-<!-- 联系方式 -->
-<footer>
-  <div class="footer-content">
-    <p>联系我们: info@tangshi300.com</p>
-    <p>&copy; 2024 唐诗三百首 | 弘扬传统文化</p>
-  </div>
-</footer>
+<div class="bottom-bar"><div class="bottom-inner"><button class="btn" id="prevBtn">← 上一步</button><button class="btn primary" id="issueBtn">＋ 记录异常</button><button class="btn dark" id="nextBtn">下一步 →</button></div></div>
+<div class="drawer-overlay" id="overlay"></div><div class="drawer" id="drawer" aria-modal="true" role="dialog"><div class="drawer-inner"><div class="drawer-head"><h2 id="drawerTitle">记录与工具</h2><button class="btn sm" id="closeDrawer" aria-label="关闭">关闭 ✕</button></div><div id="drawerContent"></div></div></div>
+<div class="toast" id="toast"></div>
+<div class="report-view" id="printReport"></div>
+<script>
+'use strict';
+const DATA_VERSION=3, STORAGE_KEY='datang-pickup-v3';
+const GROUPS=[
+ {name:'提车前',emoji:'①',short:'提前准备',sub:'10月27—30日 · 不到店也可以做',goal:'把VIN、价格、合同和周六能办的手续提前确认，避免现场被催促。',tips:'建议在周五晚完成本阶段；销售如果只说“车到了”，务必追问具体VIN及车辆是否绑定订单。',groups:[
+  {title:'销售与车辆',items:[
+   ['索取17位VIN，并确认车辆已分配给我的订单','请销售发送VIN，并保留聊天记录。','high'],
+   ['确认车型全称、动力版本、配置、外观色、内饰色与选装','大唐的具体版本以你的购车合同为准。','high'],
+   ['确认车辆制造年月、到店日期','如车龄较长，追问库存维护和轮胎/蓄电池状态。'],
+   ['确认PDI交付前检查是否完成','要求交付时说明检测结论及异常处理情况。','high'],
+   ['确定周六10:30到店交车及交付联系人','让销售明确交付专员姓名与联系电话。']
+  ]},
+  {title:'合同与预算',items:[
+   ['核对购车合同、定金凭证及提车期限','查清逾期规则与验车、付款、交付顺序。','high'],
+   ['索取成交费用清单：车价、定金、税、保险、上牌、服务费','区分裸车价、落地价，不要重复计算已包含项目。','high'],
+   ['确认优惠、补贴、置换、赠品和权益的兑现条件','特别核实开票日、上牌地、交付时间等限制。'],
+   ['确认付款账户与银行卡/转账单笔限额','收款方与合同相符，不向陌生个人账户转账。','high'],
+   ['确认是否需要购车指标与办理材料','如在深圳上牌，提前核验适用的指标及资格要求。']
+  ]},
+  {title:'保险与随身用品',items:[
+   ['提前询价交强险、车损、第三者责任险等','问清是否强制捆绑，重点看保险生效时刻。'],
+   ['确认周六临牌/正式号牌办理能力及方式','没有合法有效牌照不驶离上路。','high'],
+   ['携带身份证、驾驶证、合同、定金付款凭证','其他材料按上牌地和门店要求准备。'],
+   ['手机充满电，带银行卡、充电线、手电筒、干净软布','最好一人验车、一人听交付讲解。'],
+   ['确认门店提供充足电量/适当燃油，以及钥匙随车物品','依实际纯电/插混版本核对。']
+  ]}
+ ]},
+ {name:'到店核车',emoji:'②',short:'核对身份',sub:'建议 10:30—11:00',goal:'确认面前的就是合同约定的车；核对准确后再进入细致验车。',tips:'先看车、看证件，不急着付款、开票后确认无误或签“验收合格”。如门店流程不同，先取得明确的异常处理约定。',groups:[
+  {title:'车证一致',items:[
+   ['查看前风挡VIN并与合同/销售发送VIN核对','17位字符相同；VIN应合法且没有I/O/Q。','high'],
+   ['查看车身铭牌的VIN与出厂年月','需要时让工作人员协助找到车身打刻位置。','high'],
+   ['核对合格证/电子车辆信息及拟开发票VIN','车型、VIN、购车人信息必须与实际一致。','high'],
+   ['核对具体配置、内外饰配色、轮毂、座椅等','同名车不同配置可能差异很大。','high'],
+   ['索要PDI检查结果，询问整备/维修/喷漆/更换件情况','对含糊之处记录并要求解释。','high'],
+   ['拍摄全车四周、VIN、铭牌、仪表里程和电量','照片建议保存在手机相册并做好命名。']
+  ]}
+ ]},
+ {name:'外观底盘',emoji:'③',short:'车身验收',sub:'建议 11:00—11:40',goal:'在光线好的位置完成车漆、玻璃、轮胎、底盘重点核验。',tips:'尽量把车开到自然光下。发现明显剐蹭/喷漆/结构损伤迹象应暂停交付，先留证据。',groups:[
+  {title:'车漆与覆盖件',items:[
+   ['绕车一周，在不同角度看车漆色差、划痕、凹陷','注意门把手、前后杠、边角和车顶。','high'],
+   ['核对车门、机盖、尾门接缝与开合','观察明显不均匀的缝隙和异响。'],
+   ['检查前后保险杠、翼子板、侧裙、后视镜、饰条','注意松动、缺件和安装错位。'],
+   ['检查风挡、侧窗、后窗、天窗是否有裂痕、伤点','小碎裂也要拍照确认。','high'],
+   ['检查车灯外壳、雾灯区域有无进水/裂纹/破损','存在安全隐患时暂停。'],
+   ['检查车底护板、动力电池底部可见区域有无擦碰、凹陷、渗漏','不钻车底，让交付人员配合查看。','high']
+  ]},
+  {title:'轮胎与车门',items:[
+   ['检查四轮胎规格与标识是否相符','不同前后胎规格以厂家配置为准。'],
+   ['查看轮胎制造周数、鼓包、割伤与明显异常磨损','非同批次轮胎可询问解释，不以单一日期断定故障。'],
+   ['检查四只轮毂有无磕碰、划伤和裂纹','尤其注意轮毂外沿。'],
+   ['查看仪表胎压数据及故障提示','交付前要求胎压调整到车辆建议值。'],
+   ['测试四门、尾门、机盖锁扣和密封条','开合顺畅、无夹杂和破损。']
+  ]}
+ ]},
+ {name:'内饰车机',emoji:'④',short:'内饰功能',sub:'建议 11:40—12:20',goal:'确认一家人日常使用的座椅、空调、车机和安全装备没有明显问题。',tips:'逐项按你合同中实际配置验证；没有购买的配置可标记“不适用”。',groups:[
+  {title:'座椅与安全',items:[
+   ['检查前中后排座椅、缝线、门板、仪表台无破损','注意第三排及后备箱内饰。'],
+   ['逐个测试已配备的座椅电动调节、折叠、加热、通风','确认动作顺畅，无卡滞。'],
+   ['检查安全带卡扣、锁止、儿童锁与儿童安全座椅接口','有孩子乘车尤其重要。','high'],
+   ['测试所有车窗、遮阳帘/天窗及防夹功能','避免用手直接测试夹力。'],
+   ['检查车内异味、水迹、顶棚、地板和密封','重点注意雨水渗漏痕迹。'],
+   ['测试方向盘调节、后视镜调节与电动尾门','仅检查实际配备功能。']
+  ]},
+  {title:'车机与电气',items:[
+   ['车辆上电后检查仪表故障灯、故障提示、里程、电量','拍照留存初始数据。','high'],
+   ['测试车机触控、导航、语音、蓝牙、音响','车机系统版本可记录。'],
+   ['测试空调冷热风、前后排出风、前挡除雾','避免长时间原地高负荷运行。'],
+   ['测试大灯、转向灯、刹车灯、双闪、喇叭','可请同行家人辅助观察。','high'],
+   ['测试雨刷、玻璃水、洗涤功能','避免干刮造成玻璃划伤。'],
+   ['测试摄像头、雷达、倒车影像/全景影像','注意屏幕画面、识别及异常报警。','high'],
+   ['测试USB/Type-C、无线充电、接口、已配备附加功能','不配备项选择不适用。'],
+   ['测试实体钥匙、门锁、无钥匙进入及遥控','检查全部应交付的钥匙。','high']
+  ]}
+ ]},
+ {name:'动力试驾',emoji:'⑤',short:'动力充电',sub:'建议 12:20—13:00',goal:'识别动力、制动、转向和充电方面的关键异常。',tips:'短距离行驶测试要经门店许可，并由具备驾驶资格的人员在合法安全的条件下实施；高风险项目不必强行现场测试。',groups:[
+  {title:'电池与能源',items:[
+   ['确认动力版本：纯电EV或插混DM，并核对续航/电池配置','不假定“大唐”所有版本的设备相同。','high'],
+   ['观察电池/电驱/高压系统相关告警或故障码提示','有警告必须由交付人员解释并排除。','high'],
+   ['检查充电口、胶盖、插座外观无烧蚀、破损、进水','不触碰裸露导体和高压线束。','high'],
+   ['现场演示正常充电开始与停止（条件允许）','检查充电状态、锁止及断开步骤。'],
+   ['核对合同包含的充电设备、外放电设备和附件','按实际版本及约定。'],
+   ['插混版本：检查燃油量、加油盖、发动机相关告警（如适用）','纯电车型可选不适用。']
+  ]},
+  {title:'行驶与辅助系统',items:[
+   ['演示挡位、驻车、自动驻车、解锁及应急操作','记录不熟悉的功能。','high'],
+   ['门店允许条件下做短距试驾，确认起步、制动、转向','不在公共道路进行任何危险测试。','high'],
+   ['行驶中确认无明显跑偏、异常震动、金属撞击声','有问题暂停交付并要求检测。','high'],
+   ['确认驻车制动及倒车影像辅助正常','保持有人观察周边环境。'],
+   ['让交付人员讲解主动安全和辅助驾驶的使用条件、边界','辅助驾驶不等于自动驾驶。','high']
+  ]}
+ ]},
+ {name:'费用付款',emoji:'⑥',short:'费用与付款',sub:'验车合格后办理 · 预计30—60分钟',goal:'确认落地总成本、定金抵扣和付款凭证，避免出现临时加项。',tips:'如果门店要求先走付款/开票流程，先要求写明验车异常时的解决办法；任何时刻都不签与实际不符的验收结论。',groups:[
+  {title:'成交与凭证',items:[
+   ['逐项核对合同车价、定金抵扣、尾款','仔细核实优惠是否已兑现。','high'],
+   ['核实购置税：2026年符合条件新能源乘用车减半，减税额最高1.5万元','以发票、车型目录、主管税务机关计算结果为准。','high'],
+   ['核对交强险、商业险、上牌、代办、服务及其他费用','逐项确认是否已包含在合同总价中。','high'],
+   ['再次确认收款方、付款二维码/账户及金额','避免向个人账户或不明渠道付款。','high'],
+   ['确认付款成功回执与定金已冲抵','截图并保存正式凭证。','high'],
+   ['取得机动车销售统一发票并核对VIN、抬头、金额','信息有错应及时要求纠正。','high'],
+   ['对赠品、补贴和待履约项目拍照/书面确认','写清责任人、完成日期和交付内容。']
+  ]}
+ ]},
+ {name:'保险牌照',emoji:'⑦',short:'上路手续',sub:'付款后办理 · 时间随门店流程变化',goal:'确认法律上具备驶离门店的条件，不能只凭销售一句“可以开走”。',tips:'部分周六政务或车管业务可能不可办；应在周五确认临牌/正式牌照的具体办理安排。',groups:[
+  {title:'保险与上牌',items:[
+   ['取得交强险电子保单并核实车架号、投保人及生效时间','未生效不得开车上路。','high'],
+   ['核对商业险保额、生效时间、保险公司和被保险人','优先看车损、三者、医保外等实际保障。'],
+   ['确认购置税缴纳/减免相关手续已按要求办理','保存电子凭证或可查询记录。','high'],
+   ['确认上牌所需指标/证明、身份证件和车辆凭证齐备','如在深圳上牌，按深圳当时实际要求办理。'],
+   ['取得合法有效的正式号牌或临时行驶车号牌','必须是有效可使用的牌证，不是“正在申请”。','high'],
+   ['确认号牌适用区域、有效期、张贴/安装方法','异地行驶关注临牌许可范围。','high'],
+   ['确认保险与牌照就绪后再决定是否当日驾车驶离','若未就绪，可以完成其他手续但暂停上路。','high']
+  ]}
+ ]},
+ {name:'交车签收',emoji:'⑧',short:'最终交接',sub:'重要步骤 · 必须通过交付门禁',goal:'手续齐全、车辆无待解决的重大问题，才能最终签收并驶离。',tips:'点击下方“交车门禁”逐一确认。未满足关键条件时不要点击“最终交车完成”。',groups:[
+  {title:'物品与系统',items:[
+   ['清点所有应交付的实体钥匙/卡片及其使用状态','数量以合同、配置为准。','high'],
+   ['完成车主App绑定与数字钥匙/授权检查','能正常查看及控制车辆，注意隐私授权。'],
+   ['领取三角警告牌、反光背心、随车资料及工具','按法规与厂家装备清单确认。'],
+   ['确认发票、保单、车辆凭证及牌照办理记录已收到','纸质/电子均应能查验和保存。','high'],
+   ['逐项核对赠品及尚待履约权益的书面记录','没有交付的赠品要有兑现时间。'],
+   ['与交付人员一起核对签收文件，不签与实情不符的结论','有未解决缺陷必须列明且双方确认。','high'],
+   ['拍摄最终外观、仪表电量、里程及交车时状态','形成完整交付留痕。'],
+   ['学习充电、应急解锁、救援电话、维保入口','尤其是儿童锁和紧急停车操作。'],
+   ['离店前设好驾驶位、后视镜、导航，确认随身物品','首次上路不要测试陌生辅助驾驶功能。']
+  ]}
+ ]},
+ {name:'提车之后',emoji:'⑨',short:'7天跟进',sub:'提车当天—第7天',goal:'把遗留权益和新车初期异常及时闭环。',tips:'这部分不是周六完成交付的前提，可在之后逐项处理。',groups:[
+  {title:'当天与一周',items:[
+   ['当天保存所有发票、保单、合同、交付记录和检查报告','将HTML记录导出JSON备份到手机文件夹。'],
+   ['当晚检查车辆充电及充电桩/公共充电适配','只使用正常合规设备。'],
+   ['1—2天内复查车主App、授权、OTA版本和隐私设置','仅在安全环境下更新系统。'],
+   ['3—5天内关注异响、故障灯、刹车及转向异常','如涉及安全，停止使用并联系服务中心。'],
+   ['7天内核对牌证状态、保险、赠品和遗留整改','对延期处理的事项保留书面记录。'],
+   ['记录官方质保、首保/保养周期和救援联系方式','以实际随车官方资料为准。']
+  ]}
+ ]}
+];
+const TASKS=[]; GROUPS.forEach((s,si)=>s.groups.forEach((g,gi)=>g.items.forEach((x,ii)=>TASKS.push({id:`s${si}g${gi}t${ii}`,stage:si,group:gi,title:x[0],detail:x[1],high:x[2]==='high'}))));
+const GATES=[
+ {id:'correctVehicle',name:'车型与VIN完全一致',tip:'实车、合格证及订单/发票核对无误；车辆配置符合合同。'},
+ {id:'inspectionAccepted',name:'完整验车已完成，重大问题已排除',tip:'车漆、底盘、动力系统、制动和电气功能无未解决的重大异常。'},
+ {id:'termsCleared',name:'费用清楚，支付/发票符合约定',tip:'核对尾款与付款凭证；存在差异要先协商。'},
+ {id:'insuranceReady',name:'交强险已正式生效',tip:'保单车架号正确，当前时间已达到生效时间。'},
+ {id:'plateReady',name:'已取得合法有效的号牌/临牌',tip:'真实获得可用于上路的牌证；不是仅提交申请。'},
+ {id:'deliveryDocs',name:'交付资料、钥匙、重要权益已核对',tip:'未交付项已列明具体后续处理责任。'},
+ {id:'signTruthfully',name:'交车单内容与实际情况相符',tip:'不能为了赶时间签署并未完成或虚假的验收结论。'}
+];
+const DEFAULT={version:DATA_VERSION,stage:0,checks:{},notes:{},meta:{dealership:'',contact:'',phone:'',buyer:'',order:'',vinSales:'',vinCar:'',vinDoc:'',variant:'',color:'',manufactured:'',mileage:'',soc:'',city:'深圳（可修改）',registration:'',handover:'2026-10-31T10:30'},fees:{price:'',deposit:'',tax:'',mandatory:'',commercial:'',plate:'',service:'',other:'',otherPaid:''},gates:{},issues:[],finalizedAt:'',updatedAt:''};
+let state, storageAvailable=true, noteExpanded={}, selectedIssueTask='';
+const safe=t=>String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmtNum=n=>Number.isFinite(n)?n.toLocaleString('zh-CN',{maximumFractionDigits:2,minimumFractionDigits:2}):'—';
+const fmtDate=v=>v?new Date(v).toLocaleString('zh-CN',{hour12:false}):'—';
+const ready=t=>state.checks[t.id]==='done'||state.checks[t.id]==='na';
+function load(){try{let raw=localStorage.getItem(STORAGE_KEY); state=raw?Object.assign(structuredClone(DEFAULT),JSON.parse(raw)):structuredClone(DEFAULT);if(state.version!==DATA_VERSION)throw Error('版本不一致');}catch(e){state=structuredClone(DEFAULT);try{localStorage.setItem('__test__','1');localStorage.removeItem('__test__');}catch(err){storageAvailable=false}}}
+function persist(){state.updatedAt=new Date().toISOString();try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));storageAvailable=true;}catch(e){storageAvailable=false;toast('浏览器本地保存不可用，请立即导出JSON备份');}updateHero();}
+function toast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.classList.remove('show'),2900)}
+function counts(stage=null){let list=TASKS.filter(t=>stage===null||t.stage===stage);return {done:list.filter(ready).length,total:list.length,na:list.filter(t=>state.checks[t.id]==='na').length};}
+function blockers(){return state.issues.filter(i=>i.severity==='critical'&&!i.resolved)}
+function gatesPassed(){return GATES.every(g=>state.gates[g.id]===true)}
+function overallReady(){return gatesPassed()&&blockers().length===0&&!!state.meta.vinCar.trim()&&!!state.meta.vinDoc.trim()&&!!state.meta.vinSales.trim()&&vinMatch()&&checksHighComplete()}
+function vinMatch(){let v=[state.meta.vinSales,state.meta.vinCar,state.meta.vinDoc].map(x=>String(x||'').trim().toUpperCase());return v.every(x=>/^[A-HJ-NPR-Z0-9]{17}$/.test(x))&&v.every(x=>x===v[0]);}
+function checksHighComplete(){return TASKS.filter(t=>t.high&&t.stage<=7).every(t=>state.checks[t.id]==='done')}
+function updateHero(){let c=counts(),ratio=Math.round(100*c.done/c.total);document.getElementById('ringText').textContent=ratio+'%';document.getElementById('ring').style.setProperty('--progress',ratio+'%');document.getElementById('heroChecks').textContent=`已核验 ${c.done} / ${c.total}`;document.getElementById('heroBlockers').textContent=`阻断异常 ${blockers().length}`;document.getElementById('heroStorage').textContent=storageAvailable?'本机自动保存':'⚠ 请导出备份';document.getElementById('currentProgress').style.width=(100*counts(state.stage).done/counts(state.stage).total)+'%'}
+function drawTabs(){document.getElementById('stageTabs').innerHTML=GROUPS.map((g,i)=>{let c=counts(i);return `<button class="tab ${i===state.stage?'active':''}" role="tab" aria-selected="${i===state.stage}" data-stage="${i}">${g.emoji} ${g.short} <span class="count">${c.done}/${c.total}</span></button>`}).join('')}
+function drawWarnings(){const msgs=[];if(!storageAvailable)msgs.push('<div class="alert danger"><strong>存储不可用</strong>进度可能在关闭页面后消失。请使用“记录与备份 → 导出JSON”。</div>');if(blockers().length)msgs.push(`<div class="alert danger"><strong>当前有 ${blockers().length} 项未解决的重大异常</strong>暂停最终交付，要求门店说明、整改、复验并留存记录。</div>`);if(!state.meta.vinSales&&state.stage>0)msgs.push('<div class="alert warn"><strong>尚未记录销售提供的VIN</strong>请先核实车辆分配，并把销售VIN、实车VIN、证件VIN填入核对区。</div>');document.getElementById('topWarnings').innerHTML=msgs.length?`<div style="display:grid;gap:8px;margin-top:12px">${msgs.join('')}</div>`:''}
+function taskHtml(t){let st=state.checks[t.id]||'todo';let note=state.notes[t.id]||'';let expanded=!!noteExpanded[t.id]||!!note;return `<div class="task ${st==='done'?'done':''}" id="${t.id}"><div class="task-top"><button class="task-state ${st==='done'?'is-done':st==='na'?'is-na':''}" data-check="${t.id}" aria-label="切换 ${safe(t.title)} 的完成状态">${st==='done'?'✓ 已确认':st==='na'?'不适用':'□ 待核验'}</button><div class="task-main"><div class="task-title">${safe(t.title)}${t.high?'<span class="task-badge">重点</span>':''}</div><div class="task-detail">${safe(t.detail)}</div><div class="task-actions"><button class="micro" data-note="${t.id}">✎ 备注${note?' · 已记录':''}</button><button class="micro mark" data-taskissue="${t.id}">⚑ 有异常</button>${!t.high?`<button class="micro na" data-na="${t.id}">${st==='na'?'取消不适用':'不适用'}</button>`:''}</div>${expanded?`<textarea class="task-note" data-noteinput="${t.id}" placeholder="可以记录检测值、销售承诺、照片在相册中的名称等">${safe(note)}</textarea>`:''}</div></div></div>`}
+function metaFields(){const f=[['dealership','销售门店','例如：××比亚迪王朝店'],['contact','交付联系人','销售/交付专员'],['phone','联系人电话','电话'],['buyer','购车人','发票抬头'],['order','订单编号','订单号'],['city','上牌城市','深圳（可修改）'],['variant','完整车型/版本','大唐 · 具体配置'],['color','车身/内饰颜色','颜色'],['manufactured','制造年月','例如：2026-10'],['vinSales','销售提供VIN','17位'],['vinCar','实车VIN','17位'],['vinDoc','证件VIN','17位'],['mileage','初始行驶里程 km','例如：15'],['soc','交车电量 %','例如：82'],['registration','车牌/临牌信息','例如：临牌有效期、号码'],['handover','约定提车日期与时间','2026-10-31T10:30']];return `<div class="card"><div class="card-body"><h3>车辆与交接信息</h3><p class="small">手机现场填写，数据只保存于当前浏览器。VIN用于核对，不会发送至服务器。</p><div class="metadata-grid">${f.map(([k,label,ph])=>`<div class="field ${['variant','registration'].includes(k)?'wide':''}"><label for="m_${k}">${label}</label><input id="m_${k}" data-meta="${k}" ${k==='handover'?'type="datetime-local"':k.startsWith('vin')?'maxlength="17" style="text-transform:uppercase"':'type="text"'} placeholder="${safe(ph)}" value="${safe(state.meta[k]||'')}"></div>`).join('')}</div><div id="vinStatus" style="margin-top:12px">${vinMsg()}</div></div></div>`}
+function vinMsg(){const x=[state.meta.vinSales,state.meta.vinCar,state.meta.vinDoc];if(!x.some(v=>v))return '<div class="alert warn">VIN尚未核验：必须现场核对销售提供、实车和证件三个来源。</div>';if(vinMatch())return '<div class="alert"><strong>✓ 三处VIN一致且格式正确</strong>仍需与订单/发票及车辆配置一致。</div>';return '<div class="alert warn"><strong>VIN未能确认三处一致</strong>请核对长度、字母、数字、实车/单据一致性（VIN不包含I、O、Q）。</div>'}
+function feesHtml(){const fs=[['price','合同整车成交价（元）'],['deposit','已付定金（元）'],['tax','实际应缴购置税（元）'],['mandatory','交强险（元）'],['commercial','商业险（元）'],['plate','上牌/代办费（元）'],['service','其他服务费（元）'],['other','其余合同外支出（元）'],['otherPaid','除定金外已支付金额（元）']];return `<div class="card"><div class="card-body"><h3>付款核算器</h3><p class="small">此处是人工输入后的预算辅助计算。若某项已经包含在整车价中，请填0，避免重复计算；实际付款以合同、发票和保险报价为准。</p><div class="metadata-grid">${fs.map(([k,l])=>`<div class="field"><label>${l}</label><input inputmode="decimal" type="number" min="0" step="0.01" data-fee="${k}" value="${safe(state.fees[k])}" placeholder="待确认"></div>`).join('')}</div><div class="money-result" style="margin-top:13px"><div class="small">预计仍需支付合计</div><div class="number" id="feeResult">${feeString()}</div><div class="small" id="feeBreakdown">${feeBrief()}</div></div><div class="alert warn" style="margin-top:10px"><strong>2026购置税提醒</strong>符合条件的新能源乘用车，2026—2027年购置税减半征收，每辆最高减税1.5万元。不能因为销售说“新能源免税”就把税额填0。以发票、车型适用条件和税务机关结果为准。<br><a href="https://hq.mof.gov.cn/tongzhitonggao/202307/t20230704_3894319.htm" target="_blank" rel="noreferrer">财政部政策原文（在线链接）</a></div></div></div>`}
+function feeCalc(){if(state.fees.price==='')return null;const n=k=>Math.max(0,Number(state.fees[k])||0);return n('price')-n('deposit')+n('tax')+n('mandatory')+n('commercial')+n('plate')+n('service')+n('other')-n('otherPaid')}
+function feeString(){let n=feeCalc();return n===null?'请先输入合同车价':'¥ '+fmtNum(n)}
+function feeBrief(){return feeCalc()===null?'完成后自动汇总，未填项目暂按0计算。':'合同车价 − 定金 + 另计税费/保险/服务等 − 其他已付金额；未填项按0计算。'}
+function gateHtml(){const list=GATES.map(g=>`<div class="gate"><input type="checkbox" id="gate_${g.id}" data-gate="${g.id}" ${state.gates[g.id]?'checked':''}><label for="gate_${g.id}">${safe(g.name)}<small>${safe(g.tip)}</small></label></div>`).join('');const problems=[];if(!vinMatch())problems.push('三处VIN未确认一致');if(!checksHighComplete())problems.push(`重点核验项仍有 ${TASKS.filter(t=>t.high&&t.stage<=7&&state.checks[t.id]!=='done').length} 项未确认`);if(blockers().length)problems.push(`${blockers().length}项重大异常未解决`);if(!gatesPassed())problems.push(`${GATES.filter(g=>!state.gates[g.id]).length}个交车门禁未通过`);return `<div class="card" id="gatePanel"><div class="card-body"><h3>🔒 最终交车门禁</h3><p class="small">必须亲自确认所有条件，工具才允许记录“交车完成”。勾选仅代表你的人工核验，不会代替官方验收。</p><div class="gates">${list}</div><div id="gateConclusion" style="margin-top:12px">${problems.length?`<div class="alert danger"><strong>暂不满足最终交车条件</strong>${problems.map(s=>'• '+safe(s)).join('<br>')}</div>`:'<div class="alert"><strong>关键门禁已全部通过</strong>请在确认实车和文件后完成最终签收。</div>'}</div><div class="actions" style="margin-top:12px"><button class="btn primary" data-finalize ${overallReady()||state.finalizedAt?'':'disabled'}>${state.finalizedAt?'✓ 已记录交车完成':'确认最终交车完成'}</button>${state.finalizedAt?'<button class="btn warn sm" data-unfinalize>撤销完成记录</button>':''}</div>${state.finalizedAt?`<p class="small">记录时间：${fmtDate(state.finalizedAt)}。如出现新重大异常，请重新核实记录。</p>`:''}</div></div>`}
+function introHtml(s){return `<div class="card"><div class="stage-intro"><span class="step-number">第 ${state.stage+1} / ${GROUPS.length} 阶段</span><h2>${s.emoji} ${s.name}</h2><p>${s.sub}</p><div class="alert"><strong>本阶段目标</strong>${s.goal}</div></div><div class="guide"><strong>操作提示：</strong>${s.tips}</div></div>`}
+function issuesMini(){let issues=state.issues.filter(i=>i.stage===state.stage).sort((a,b)=>b.created.localeCompare(a.created));return `<div class="card"><div class="card-body"><div class="section-heading" style="margin:0"><h3>本阶段异常与待处理项</h3><button class="btn sm" data-viewissues>全部 ${state.issues.length} 项 →</button></div>${issues.length?issues.map(issueHtml).join(''):'<p class="small">暂无异常。遇到车漆、付款、保险、配置等问题，点底部「＋记录异常」保存问题与处理结果。</p>'}</div></div>`}
+function issueHtml(i){return `<div class="issue ${i.severity==='critical'?'critical':''} ${i.resolved?'resolved':''}"><div class="issue-header"><span class="pill ${i.resolved?'green':i.severity==='critical'?'red':''}">${i.resolved?'✓ 已解决':i.severity==='critical'?'⛔ 重大 / 阻断':'待协商 / 记录'}</span><small>${safe(GROUPS[i.stage]?.name||'其他')} · ${new Date(i.created).toLocaleDateString('zh-CN')}</small></div><p><b>${safe(i.title)}</b><br>${safe(i.description||'')}</p>${i.solution?`<p class="small"><b>约定/处理：</b>${safe(i.solution)}</p>`:''}<footer><button class="btn sm" data-resolve="${safe(i.id)}">${i.resolved?'改为未解决':'标记已解决'}</button><button class="btn sm" data-editissue="${safe(i.id)}">编辑</button><button class="btn sm" data-deleteissue="${safe(i.id)}">删除</button></footer></div>`}
+function drawStage(){let s=GROUPS[state.stage];drawTabs();drawWarnings();updateHero();const extras=state.stage===0?metaFields():state.stage===1?metaFields():state.stage===5?feesHtml():state.stage===7?gateHtml():'';document.getElementById('stagePane').innerHTML=`${introHtml(s)}${extras}${s.groups.map(g=>{let list=TASKS.filter(t=>t.stage===state.stage&&t.group===s.groups.indexOf(g));return `<div class="card"><div class="group-head"><h3>${safe(g.title)}</h3><span>${list.filter(ready).length} / ${list.length}</span></div>${list.map(taskHtml).join('')}</div>`}).join('')}${issuesMini()}${state.stage===8?'<div class="card"><div class="card-body"><h3>复盘与备份</h3><p class="small">及时导出JSON或文字记录，避免清除浏览器缓存时丢失信息。报告包含部分个人信息，请保管好文件。</p><div class="actions"><button class="btn primary" data-export>导出JSON备份</button><button class="btn" data-report>查看完整报告</button></div></div></div>':''}<p class="navhint">当前阶段 ${counts(state.stage).done} / ${counts(state.stage).total} 项已处理 · 轻触「待核验」即可标为已确认</p>`;document.getElementById('prevBtn').disabled=state.stage===0;document.getElementById('nextBtn').textContent=state.stage===GROUPS.length-1?'查看总结 →':'下一步 →';}
+function setStage(i){state.stage=Math.min(GROUPS.length-1,Math.max(0,i));persist();drawStage();window.scrollTo({top:0,behavior:'instant'});document.querySelector('.tab.active')?.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});}
+function openDrawer(title,html){document.getElementById('drawerTitle').textContent=title;document.getElementById('drawerContent').innerHTML=html;document.getElementById('drawer').classList.add('open');document.getElementById('overlay').classList.add('open');document.body.style.overflow='hidden'}
+function closeDrawer(){document.getElementById('drawer').classList.remove('open');document.getElementById('overlay').classList.remove('open');document.body.style.overflow=''}
+function toolsDrawer(){const c=counts();const html=`<div class="overview-stats"><div class="stat"><strong>${c.done}/${c.total}</strong><span>核验进度</span></div><div class="stat"><strong>${state.issues.length}</strong><span>异常总数</span></div><div class="stat"><strong>${blockers().length}</strong><span>未解决重大异常</span></div></div><p class="small">最近记录：${state.updatedAt?fmtDate(state.updatedAt):'尚未保存'}</p><div class="tool-btns"><button class="btn primary" data-export>⬇ 导出JSON备份</button><button class="btn" data-import>⬆ 导入JSON恢复</button><button class="btn" data-txt>⬇ 导出TXT报告</button><button class="btn" data-copy>复制文字报告</button><button class="btn" data-print>打印/另存PDF</button><button class="btn" data-viewissues>查看所有异常</button></div><input type="file" accept="application/json,.json" id="importInput" class="hidden"><div class="alert warn" style="margin-top:14px"><strong>请注意离线数据</strong>勾选和备注只自动保存在当前设备、当前浏览器的本地存储。换浏览器、清除网站数据、某些手机浏览器直接打开本地文件，都可能导致丢失。建议每天及交车结束导出JSON备份到手机“文件”或云盘。JSON含VIN、交易信息，勿随意分享。</div><button class="btn warn" data-reset style="margin-top:12px">重置全部数据（谨慎）</button>`;openDrawer('记录 · 备份 · 导出',html)}
+function issueForm(id='',taskId=''){let old=state.issues.find(i=>i.id===id)||{};let t=TASKS.find(x=>x.id===taskId);let stage=old.stage??t?.stage??state.stage;let form=`<form id="issueForm"><div class="metadata-grid"><div class="field"><label>所属阶段</label><select name="stage">${GROUPS.map((g,i)=>`<option value="${i}" ${stage===i?'selected':''}>${safe(g.name)}</option>`).join('')}</select></div><div class="field"><label>影响级别</label><select name="severity"><option value="critical" ${old.severity==='critical'||(!old.severity&&t?.high)?'selected':''}>重大：暂停交车</option><option value="normal" ${old.severity==='normal'||(!old.severity&&!t?.high)?'selected':''}>一般：协商整改</option></select></div><div class="field wide"><label>问题标题</label><input name="title" maxlength="100" required placeholder="例如：后保险杠存在明显划痕" value="${safe(old.title||t?.title||'')}"></div><div class="field wide"><label>问题详情（位置 / 现象 / 时间 / 照片文件名）</label><textarea name="description" placeholder="建议打开手机相机拍照，记录照片在相册中的名称；本HTML不自动上传或保存照片">${safe(old.description||'')}</textarea></div><div class="field wide"><label>销售承诺 / 解决方案 / 整改截止时间</label><textarea name="solution" placeholder="例如：销售确认周一更换饰件，双方微信留痕">${safe(old.solution||'')}</textarea></div></div><div class="actions" style="margin-top:12px"><button type="submit" class="btn primary">${id?'保存修改':'保存异常'}</button><button type="button" class="btn" data-close>取消</button></div></form><div class="alert warn" style="margin-top:12px">重大异常保持“未解决”将阻断最终交车。只有实际核实整改完成、复验合格后再标记解决。照片请在手机相册单独保存，本工具不存照片。</div>`;openDrawer(id?'修改异常':'记录异常 / 问题处理',form);document.getElementById('issueForm').dataset.id=id;}
+function allIssuesDrawer(){let issues=[...state.issues].sort((a,b)=>b.created.localeCompare(a.created));openDrawer('全部异常与处理',`<div class="actions"><button class="btn primary" data-addissue>＋ 新建异常</button></div>${issues.length?issues.map(issueHtml).join(''):'<div class="alert" style="margin-top:12px">暂无异常记录。</div>'}`)}
+function reportText(){const c=counts(),f=feeCalc();let lines=[`比亚迪大唐提车验收记录`,`约定时间：${state.meta.handover||'2026-10-31T10:30'}`,`导出时间：${new Date().toLocaleString('zh-CN')}`,`交付记录：${state.finalizedAt?'已记录完成 '+fmtDate(state.finalizedAt):'尚未确认最终完成'}`,`门店：${state.meta.dealership||'未填'}  联系人：${state.meta.contact||'未填'}`,`购车人：${state.meta.buyer||'未填'}  订单：${state.meta.order||'未填'}`,`车辆版本：${state.meta.variant||'未填'}  颜色：${state.meta.color||'未填'}`,`VIN 销售：${state.meta.vinSales||'未填'}`,`VIN 实车：${state.meta.vinCar||'未填'}`,`VIN 证件：${state.meta.vinDoc||'未填'}`,`VIN 一致：${vinMatch()?'是':'未核验或不一致'}`,`制造年月：${state.meta.manufactured||'未填'}  里程：${state.meta.mileage||'未填'} km  电量：${state.meta.soc||'未填'}%`,`合计进度：${c.done}/${c.total}（不适用${c.na}）`,`重大未解决异常：${blockers().length}`,`预计剩余支付：${f===null?'未填车价':'¥'+fmtNum(f)}`,``, '=== 各阶段核验项 ==='];GROUPS.forEach((g,si)=>{let k=counts(si);lines.push(`\n【${si+1}.${g.name}】${k.done}/${k.total}`);TASKS.filter(t=>t.stage===si).forEach(t=>{let st=state.checks[t.id];lines.push(`${st==='done'?'[√]':st==='na'?'[不适用]':'[ ]'} ${t.title}`);if(state.notes[t.id])lines.push(`    备注：${state.notes[t.id]}`)})});lines.push('\n=== 最终交车门禁 ===');GATES.forEach(g=>lines.push(`${state.gates[g.id]?'[√]':'[ ]'} ${g.name}`));lines.push('\n=== 异常记录 ===');if(state.issues.length===0)lines.push('无');state.issues.forEach((i,ix)=>{lines.push(`${ix+1}. [${i.resolved?'已解决':'未解决'}][${i.severity==='critical'?'重大':'一般'}] ${i.title}（${GROUPS[i.stage]?.name||'其他'}）`);lines.push(`  详情：${i.description||'无'}；处理：${i.solution||'未填写'}`)});lines.push('\n注：此清单为个人核验记录，不代替官方交车单和合同。');return lines.join('\n')}
+function download(name,blob){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000)}
+function exportJSON(){download('大唐提车记录_2026-10-31.json',new Blob([JSON.stringify(state,null,2)],{type:'application/json;charset=utf-8'}));toast('已生成JSON备份，请在手机文件中确认保存')}
+function exportTXT(){download('大唐提车检查报告_2026-10-31.txt',new Blob(['\ufeff'+reportText()],{type:'text/plain;charset=utf-8'}));toast('已生成文字报告')}
+function importJSON(file){if(!file)return;const reader=new FileReader();reader.onload=()=>{try{let parsed=JSON.parse(String(reader.result));if(parsed.version!==DATA_VERSION||typeof parsed.checks!=='object'||!Array.isArray(parsed.issues)||typeof parsed.meta!=='object')throw Error('文件不符合当前格式');if(!confirm('导入将覆盖当前手机上的所有提车进度。确定继续吗？'))return;state=Object.assign(structuredClone(DEFAULT),parsed);persist();closeDrawer();drawStage();toast('恢复成功')}catch(e){alert('导入失败：'+e.message)}};reader.readAsText(file)}
+function printReport(){const txt=reportText();document.getElementById('printReport').innerHTML=`<h1>大唐提车核验报告</h1><pre style="white-space:pre-wrap;overflow-wrap:anywhere;font-family:Arial,sans-serif;font-size:11px">${safe(txt)}</pre>`;window.print()}
+async function copyReport(){const txt=reportText();try{await navigator.clipboard.writeText(txt);toast('已复制完整报告')}catch(e){const area=document.createElement('textarea');area.value=txt;document.body.appendChild(area);area.select();try{document.execCommand('copy');toast('已复制报告')}catch(err){toast('无法自动复制，请使用TXT导出')}area.remove()}}
+function markIssue(id,resolved){let x=state.issues.find(i=>i.id===id);if(!x)return;if(resolved&&x.severity==='critical'&&!confirm('重大异常必须在实际整改、复验合格后才能标记已解决。你已经核实了吗？'))return;x.resolved=resolved;x.resolvedAt=resolved?new Date().toISOString():'';if(!resolved)state.finalizedAt='';persist();const isIssueDrawer=document.getElementById('drawer').classList.contains('open')&&document.getElementById('drawerTitle').textContent.includes('全部异常');if(isIssueDrawer)allIssuesDrawer();drawStage();}
+function resetAll(){if(!confirm('将清空所有进度、费用和异常记录，无法撤销。建议先导出JSON备份。是否继续？'))return;if(!confirm('再次确认：真的要删除本机所有记录吗？'))return;state=structuredClone(DEFAULT);persist();closeDrawer();drawStage()}
+function stageNext(){if(state.stage<GROUPS.length-1){setStage(state.stage+1)}else{toolsDrawer()}}
+function onClick(ev){const btn=ev.target.closest('button');if(!btn)return;let d=btn.dataset;if(d.stage!==undefined){setStage(Number(d.stage));return}if(d.check){let t=TASKS.find(t=>t.id===d.check);if(state.finalizedAt&&t?.high)state.finalizedAt='';state.checks[d.check]=state.checks[d.check]==='done'?'todo':'done';persist();drawStage();return}if(d.na){state.checks[d.na]=state.checks[d.na]==='na'?'todo':'na';persist();drawStage();return}if(d.note){noteExpanded[d.note]=!noteExpanded[d.note];drawStage();document.getElementById(d.note)?.scrollIntoView({block:'nearest'});return}if(d.taskissue){issueForm('',d.taskissue);return}if(d.viewissues!==undefined){allIssuesDrawer();return}if(d.addissue!==undefined){issueForm();return}if(d.resolve){let x=state.issues.find(i=>i.id===d.resolve);markIssue(d.resolve,!x?.resolved);return}if(d.editissue){issueForm(d.editissue);return}if(d.deleteissue){if(!confirm('确定删除这条异常记录吗？建议先备份。'))return;state.issues=state.issues.filter(i=>i.id!==d.deleteissue);persist();if(document.getElementById('drawer').classList.contains('open'))allIssuesDrawer();drawStage();return}if(d.finalize!==undefined){if(!overallReady()){toast('存在交车门禁未通过，请先处理');return}if(!confirm('确认车辆、款项、保险、合法牌照和所有重大问题均已核实，且准备完成最终签收？'))return;state.finalizedAt=new Date().toISOString();persist();drawStage();toast('已记录最终交车完成！记得导出JSON备份');return}if(d.unfinalize!==undefined){state.finalizedAt='';persist();drawStage();return}if(d.export!==undefined){exportJSON();return}if(d.txt!==undefined){exportTXT();return}if(d.copy!==undefined){copyReport();return}if(d.print!==undefined){printReport();return}if(d.import!==undefined){document.getElementById('importInput')?.click();return}if(d.report!==undefined){toolsDrawer();return}if(d.reset!==undefined){resetAll();return}if(d.close!==undefined){closeDrawer();return}}
+function onInput(ev){let e=ev.target,d=e.dataset;if(d.meta){state.meta[d.meta]=e.value;if(d.meta.startsWith('vin'))state.meta[d.meta]=e.value.toUpperCase().trim();persist();if(d.meta.startsWith('vin')){document.getElementById('vinStatus').innerHTML=vinMsg()}return}if(d.fee){state.fees[d.fee]=e.value;persist();let v=document.getElementById('feeResult');if(v){v.textContent=feeString();document.getElementById('feeBreakdown').textContent=feeBrief()}return}if(d.noteinput){state.notes[d.noteinput]=e.value;persist();return}}
+function onChange(ev){const d=ev.target.dataset;if(d.gate){state.gates[d.gate]=ev.target.checked;if(!ev.target.checked)state.finalizedAt='';persist();drawStage();return}if(ev.target.id==='importInput'){importJSON(ev.target.files[0]);return}}
+function onSubmit(ev){if(ev.target.id!=='issueForm')return;ev.preventDefault();const f=ev.target,fd=new FormData(f),title=String(fd.get('title')||'').trim();if(!title){toast('请填写问题标题');return}let id=f.dataset.id;let i=id?state.issues.find(x=>x.id===id):null;let now=new Date().toISOString();if(!i){i={id:'issue_'+Date.now()+'_'+Math.random().toString(36).slice(2,7),created:now,resolved:false};state.issues.push(i)}i.stage=Number(fd.get('stage'));i.severity=String(fd.get('severity'));i.title=title;i.description=String(fd.get('description')||'').trim();i.solution=String(fd.get('solution')||'').trim();i.modified=now;if(i.severity==='critical'&&!i.resolved)state.finalizedAt='';persist();closeDrawer();drawStage();toast('异常已保存');}
+load();drawStage();document.addEventListener('click',onClick);document.addEventListener('input',onInput);document.addEventListener('change',onChange);document.addEventListener('submit',onSubmit);document.getElementById('prevBtn').addEventListener('click',()=>setStage(state.stage-1));document.getElementById('nextBtn').addEventListener('click',stageNext);document.getElementById('issueBtn').addEventListener('click',()=>issueForm());document.getElementById('openTools').addEventListener('click',toolsDrawer);document.getElementById('closeDrawer').addEventListener('click',closeDrawer);document.getElementById('overlay').addEventListener('click',closeDrawer);document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});
+</script>
 </body>
 </html>
