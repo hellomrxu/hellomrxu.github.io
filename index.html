@@ -13,6 +13,11 @@
 @media(min-width:760px){.app{padding:0 20px 100px}header{margin:0 -20px;padding-left:32px;padding-right:32px}.stage-bar{margin:0 -20px;padding:10px 20px}.stage-layout{display:grid;grid-template-columns:1fr 340px;gap:16px}.stage-layout>aside{align-self:start;position:sticky;top:74px}.drawer{left:50%;right:auto;width:min(700px,100%);transform:translateX(-50%)}.metadata-grid{grid-template-columns:repeat(3,1fr)}}
 @media print{body{background:#fff;color:#000;font-size:11px}.app,.bottom-bar,.drawer,.drawer-overlay,.toast{display:none!important}.report-view{display:block!important;padding:12px}.report-view h1{font-size:23px}.report-view h2{font-size:16px;margin:14px 0 5px}.report-view p,.report-view li{line-height:1.4}.report-view table{width:100%;border-collapse:collapse}.report-view td,.report-view th{border:1px solid #999;padding:5px;vertical-align:top;word-break:break-word}.report-view .page-break{page-break-before:always}}
 </style>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="大唐提车">
 </head>
 <body>
 <div class="app">
@@ -232,6 +237,13 @@ function onInput(ev){let e=ev.target,d=e.dataset;if(d.meta){state.meta[d.meta]=e
 function onChange(ev){const d=ev.target.dataset;if(d.gate){state.gates[d.gate]=ev.target.checked;if(!ev.target.checked)state.finalizedAt='';persist();drawStage();return}if(ev.target.id==='importInput'){importJSON(ev.target.files[0]);return}}
 function onSubmit(ev){if(ev.target.id!=='issueForm')return;ev.preventDefault();const f=ev.target,fd=new FormData(f),title=String(fd.get('title')||'').trim();if(!title){toast('请填写问题标题');return}let id=f.dataset.id;let i=id?state.issues.find(x=>x.id===id):null;let now=new Date().toISOString();if(!i){i={id:'issue_'+Date.now()+'_'+Math.random().toString(36).slice(2,7),created:now,resolved:false};state.issues.push(i)}i.stage=Number(fd.get('stage'));i.severity=String(fd.get('severity'));i.title=title;i.description=String(fd.get('description')||'').trim();i.solution=String(fd.get('solution')||'').trim();i.modified=now;if(i.severity==='critical'&&!i.resolved)state.finalizedAt='';persist();closeDrawer();drawStage();toast('异常已保存');}
 load();drawStage();document.addEventListener('click',onClick);document.addEventListener('input',onInput);document.addEventListener('change',onChange);document.addEventListener('submit',onSubmit);document.getElementById('prevBtn').addEventListener('click',()=>setStage(state.stage-1));document.getElementById('nextBtn').addEventListener('click',stageNext);document.getElementById('issueBtn').addEventListener('click',()=>issueForm());document.getElementById('openTools').addEventListener('click',toolsDrawer);document.getElementById('closeDrawer').addEventListener('click',closeDrawer);document.getElementById('overlay').addEventListener('click',closeDrawer);document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js', {scope:'./'}).catch(console.warn);
+  });
+}
 </script>
 </body>
 </html>
